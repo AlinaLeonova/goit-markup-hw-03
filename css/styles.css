@@ -42,12 +42,14 @@ a {
   line-height: 1.19;
   letter-spacing: 0.03em;
   text-decoration: none;
+  display: inline-block;
 }
 .accent {
   color: var(--accent-color);
 }
 
 /* --- HEADER --- */
+
 .nav-link {
   color: var(--title-text-color);
   font-family: inherit;
@@ -55,6 +57,7 @@ a {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  display: inline-block;
 }
 .nav-link:hover,
 .nav-link:focus {
@@ -71,6 +74,7 @@ a {
   line-height: 16px;
   letter-spacing: 0.02em;
   text-decoration: none;
+  display: inline-block;
 }
 .contacts-item:hover,
 .contacts-item:focus {
@@ -107,8 +111,8 @@ a {
 .button-text {
   color: var(--primary-white-color);
 }
-.button:hover,
-.button:focus {
+.modal-button:hover,
+.modal-button:focus {
   color: var(--accent-color);
   opacity: 0.7;
 }
@@ -128,8 +132,7 @@ a {
   text-transform: uppercase;
 }
 /* --- FEATURES --- */
-.features-list .title,
-.service-list .title {
+.features-title {
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 14px;
@@ -138,7 +141,7 @@ a {
   text-transform: uppercase;
 }
 
-.features-list .text {
+.features-text {
   color: var(--primary-text-color);
   font-size: 14px;
   line-height: 1.71;
@@ -148,24 +151,36 @@ a {
 .team {
   background-color: var(--secondary-grey-color);
 }
-.name {
+.team-card {
+  display: inline-block;
+  background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+.card-title {
   color: var(--title-text-color);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+  text-align: center;
 }
-.examples .item {
-  text-decoration: none;
-}
-.examples .item:hover,
-.examples .item:focus {
-  color: var(--accent-color);
+.card-description {
+  color: var(--primary-text-color);
+  font-weight: 400px;
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  text-align: center;
 }
 
 /* --- FOOTER --- */
 /* --- GALLERY --- */
-.gallery-button {
+.gallery-btn {
   background: #f5f4fa;
   border-radius: 4px;
+}
+.gallery-btn:hover,
+.gallery-btn:focus {
+  color: var(--accent-color);
 }
