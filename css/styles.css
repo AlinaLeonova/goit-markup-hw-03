@@ -1,4 +1,4 @@
-:root {
+/* :root {
   --primary-text-color: #757575;
   --title-text-color: #212121;
   --accent-color: #2196f3;
@@ -6,6 +6,11 @@
   --secondary-grey-color: #f5f4fa;
   --background-color: #2f303a;
   --main-font: Roboto, sans-serif;
+} */
+html {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 body {
   background-color: var(--primary-white-color);
@@ -21,6 +26,14 @@ a {
   text-decoration: none;
   color: inherit;
 }
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Остальной код */
 /* --- LOGO --- */
 .logo {
   color: #212121;
@@ -63,6 +76,12 @@ a {
 .contacts-item:focus {
   color: var(--accent-color);
 }
+/* HEADER END */
+/* --- SECTION --- */
+.section {
+  width: 1600px;
+  outline: 2px solid grey;
+}
 
 .section-title {
   color: var(--title-text-color);
@@ -72,9 +91,10 @@ a {
   text-align: center;
   letter-spacing: 0.03em;
 }
-.button {
+
+/* --- BUTTON --- */
+.modal-button {
   font-family: var(--main-font);
-  color: var(--primary-white-color);
   background-color: var(--accent-color);
   font-weight: 500;
   font-size: 16px;
@@ -82,6 +102,10 @@ a {
   letter-spacing: 0.06em;
   text-align: center;
   border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+.button-text {
+  color: var(--primary-white-color);
 }
 .button:hover,
 .button:focus {
@@ -89,8 +113,12 @@ a {
   opacity: 0.7;
 }
 
-.hero-title {
+.hero-section {
+  width: 1600px;
+  height: 600px;
   background-color: var(--background-color);
+}
+.hero-title {
   color: var(--primary-white-color);
   font-weight: 900;
   font-size: 44px;
@@ -137,3 +165,7 @@ a {
 
 /* --- FOOTER --- */
 /* --- GALLERY --- */
+.gallery-button {
+  background: #f5f4fa;
+  border-radius: 4px;
+}
