@@ -60,11 +60,14 @@ a {
 /* --- HEADER --- */
 .header {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
   padding: 32px 0;
+  background-color: var(--primary-white-color);
 }
-
+.header-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 .nav {
   display: flex;
   align-items: center;
@@ -110,6 +113,7 @@ a {
 .contacts {
   margin: 0;
   display: flex;
+  align-items: center;
 }
 
 .contacts-item {
@@ -237,6 +241,7 @@ a {
 .work-examples {
   margin: 0;
   display: flex;
+  align-items: center;
   margin: -15px;
 }
 
@@ -300,11 +305,12 @@ a {
   line-height: 1.19;
   letter-spacing: 0.03em;
   text-decoration: none;
+  padding-top: 60px;
 }
 
 /* --- GALLERY --- */
 
-.gallery-btn {
+.gallery-menu .gallery-btn {
   background: #f5f4fa;
   border-radius: 4px;
   padding: 6px 22px;
@@ -326,6 +332,9 @@ a {
   flex-wrap: wrap;
 }
 
+.gallery-sect {
+  padding-bottom: 94px;
+}
 .gallery-item {
   width: 370px;
   margin: 15px;
