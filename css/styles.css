@@ -30,6 +30,7 @@ body {
 ul {
   list-style: none;
   margin: 0;
+  padding: 0;
 }
 
 h1,
@@ -303,6 +304,10 @@ a {
   background-color: var(--background-color);
 }
 
+.address {
+  padding-top: 60px;
+}
+
 .logo-footer {
   color: var(--primary-white-color);
   font-family: Raleway, sans-serif;
@@ -310,10 +315,14 @@ a {
   line-height: 1.19;
   letter-spacing: 0.03em;
   text-decoration: none;
-  padding-top: 60px;
 }
 
 /* --- GALLERY --- */
+
+.gallery-menu {
+  display: flex;
+  justify-content: center;
+}
 
 .gallery-menu .gallery-btn {
   background: #f5f4fa;
@@ -330,6 +339,10 @@ a {
 .gallery-btn:hover,
 .gallery-btn:focus {
   color: var(--accent-color);
+}
+
+.gallery-btn:not(:last-child) {
+  margin-right: 8px;
 }
 
 .gallery {
