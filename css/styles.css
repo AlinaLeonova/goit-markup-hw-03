@@ -197,6 +197,8 @@ a {
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  margin-bottom: 30px;
+  padding-top: 200px;
 }
 
 /* --- FEATURES --- */
