@@ -75,6 +75,7 @@ button {
   display: flex;
   padding: 32px 0;
   background-color: var(--primary-white-color);
+  border-bottom: 1px solid #ececec;
 }
 .header-flex {
   display: flex;
@@ -384,15 +385,16 @@ button {
 }
 
 .gallery-sect {
+  padding-top: 94px;
   padding-bottom: 94px;
 }
 
 .gallery-item {
   width: calc((100% - 60px) / 3);
-  text-align: center;
+  /* text-align: center; */
   margin-right: 15px;
   border: 1px solid #eeeeee;
-  display: flex;
+  display: block;
 }
 
 .gallery-item:not(:nth-last-child(-n + 3)) {
@@ -408,7 +410,9 @@ button {
 }
 
 .gallery-item-description {
-  padding: 20px 0;
+  padding-left: 24px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .visually-hidden {
