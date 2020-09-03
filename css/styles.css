@@ -199,6 +199,11 @@ button {
   color: var(--primary-white-color);
 }
 
+.hero {
+  padding-left: 200px;
+  padding-right: 200px;
+}
+
 .hero-section {
   width: 1600px;
   height: 600px;
