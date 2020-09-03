@@ -240,9 +240,6 @@ button {
   width: 270px;
   margin: 15px;
 }
-/* .features-item:not(:last-child) {
-  margin-right: 15px;
-} */
 
 .features-title {
   color: var(--title-text-color);
