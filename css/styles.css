@@ -233,6 +233,9 @@ button {
   width: 270px;
   margin: 15px;
 }
+/* .features-item:not(:last-child) {
+  margin-right: 15px;
+} */
 
 .features-title {
   color: var(--title-text-color);
@@ -383,6 +386,8 @@ button {
   width: calc((100% - 60px) / 3);
   text-align: center;
   margin-right: 15px;
+  border: 1px solid #eeeeee;
+  display: flex;
 }
 
 .gallery-item:not(:nth-last-child(-n + 3)) {
@@ -394,4 +399,20 @@ button {
   line-height: 2;
   letter-spacing: 0.06em;
   color: #212121;
+  margin-bottom: 4px;
+}
+
+.gallery-item-description {
+  padding: 20px 0;
+}
+
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
 }
