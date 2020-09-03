@@ -390,7 +390,7 @@ button {
 }
 
 .gallery-item {
-  width: calc((100% - 60px) / 3);
+  width: calc((100% - 90px) / 3);
   /* text-align: center; */
   margin-right: 15px;
   border: 1px solid #eeeeee;
@@ -399,6 +399,10 @@ button {
 
 .gallery-item:not(:nth-last-child(-n + 3)) {
   margin-bottom: 30px;
+}
+
+.gallery-item:not(:nth-child(3n)) {
+  margin-right: 30px;
 }
 
 .gallery-item .title {
