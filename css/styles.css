@@ -174,14 +174,18 @@ button {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
-  text-align: center;
   border-radius: 4px;
   padding: 10px 32px;
   border: 1px solid transparent;
+  min-width: 200px;
+  height: 50px;
 }
 
 .button-text {
   color: var(--primary-white-color);
+  text-align: center;
+
+  /* padding: 10px 32px; */
 }
 
 .modal-button:hover,
