@@ -59,6 +59,9 @@ button {
   cursor: pointer;
 }
 
+address {
+  font-style: normal;
+}
 /* --- CONTAINER --- */
 
 .container {
@@ -328,11 +331,16 @@ button {
 
 .footer {
   background-color: var(--background-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer-section {
+  width: 270px;
 }
 
 .address {
-  padding-top: 60px;
-  padding-bottom: 60px;
+  font-size: 14px;
 }
 .address-item:not(:last-child) {
   margin-bottom: 9px;
