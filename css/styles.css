@@ -325,8 +325,11 @@ button {
 
 .address {
   padding-top: 60px;
+  padding-bottom: 60px;
 }
-
+.address-item:not(:last-child) {
+  margin-bottom: 9px;
+}
 .logo-footer {
   color: var(--primary-white-color);
   font-family: Raleway, sans-serif;
@@ -334,6 +337,8 @@ button {
   line-height: 1.19;
   letter-spacing: 0.03em;
   text-decoration: none;
+  display: block;
+  margin-bottom: 20px;
 }
 
 /* --- GALLERY --- */
@@ -377,6 +382,7 @@ button {
 .gallery-item {
   width: calc((100% - 60px) / 3);
   text-align: center;
+  margin-right: 15px;
 }
 
 .gallery-item:not(:nth-last-child(-n + 3)) {
